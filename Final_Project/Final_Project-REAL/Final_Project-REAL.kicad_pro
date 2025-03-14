@@ -61,7 +61,19 @@
       ],
       "drc_exclusions": [
         "silk_edge_clearance|164710000|47870000|a1531b39-8dae-4637-9a8d-49791182f594|d9865338-d0b8-43dc-a482-232c73779af2",
-        "silk_edge_clearance|164830000|47990000|a1531b39-8dae-4637-9a8d-49791182f594|499c4f11-07c7-42dc-9233-f46900fc9b26"
+        "silk_edge_clearance|164830000|47990000|a1531b39-8dae-4637-9a8d-49791182f594|499c4f11-07c7-42dc-9233-f46900fc9b26",
+        "silk_overlap|105441905|66397467|ec1fa596-e92f-4800-b8c3-1f3f34457af6|b323857c-ea32-40a5-b8df-1807b4f0efa4",
+        "silk_overlap|105470760|58897286|4ced5b9f-75a1-4a21-b853-3ffa520e68dc|bee859e0-ac5d-444a-8c97-c74effe19fc6",
+        "silk_overlap|105470760|65897286|ec1fa596-e92f-4800-b8c3-1f3f34457af6|02b85d1b-a007-4220-b432-7d439dde481b",
+        "silk_overlap|105491905|81309747|7325470d-d6a5-4cb6-9e87-aa2739534df2|b3f9fc25-32cb-49b2-940f-d7096127596f",
+        "silk_overlap|105514502|88403130|6d9c4781-7624-4c61-bcbb-5a51c92b8841|de4babc4-a6c7-4e4d-b6b3-4441a021cab5",
+        "silk_overlap|106567524|80869782|2869e5d8-a348-451c-8f92-96b2b7be2f66|b3f9fc25-32cb-49b2-940f-d7096127596f",
+        "silk_overlap|106851115|59413710|4ced5b9f-75a1-4a21-b853-3ffa520e68dc|87a92942-2858-4532-9595-6e3930c4bba6",
+        "silk_overlap|116102960|56370000|399f4dff-8fea-4122-9911-3b8913ca1df9|de9d16b1-1abe-4530-951b-5322771c0e03",
+        "silk_overlap|116181905|59870000|10cff354-3561-4c24-a83f-474648cd21e9|7524d258-e244-416c-91cc-f3c4cd962a1a",
+        "silk_overlap|117102960|63370000|e7f496fe-3ec6-45d2-b906-9243eae30b0d|aaed6e9d-e6e4-4bca-9c81-d83d1971e519",
+        "silk_overlap|117602960|66870000|ea849a57-8c09-4f79-9090-085e22c42548|b462ed20-9302-40e0-81c2-3f6364232417",
+        "silk_overlap|118102960|70370000|357bfe94-e131-46cb-97d2-360bc30532b1|fbc5ec0c-8409-4fe8-b926-d743928d43db"
       ],
       "meta": {
         "filename": "board_design_settings.json",
@@ -187,8 +199,9 @@
       ],
       "track_widths": [
         0.0,
-        0.381,
-        0.508
+        0.2,
+        0.4,
+        0.6
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -248,12 +261,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      "power_pin_not_driven|1892300|419100|d70870df-ccca-4386-af5b-47bfdf53aa0e|00000000-0000-0000-0000-000000000000|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55|",
-      "power_pin_not_driven|266700|266700|6bd03990-0c6f-47aa-a191-9be4dd5032ee|00000000-0000-0000-0000-000000000000|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55|",
-      "power_pin_not_driven|292100|266700|fdd33dcf-399e-4ac6-99f5-9ccff615cf55|00000000-0000-0000-0000-000000000000|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55|",
-      "power_pin_not_driven|317500|266700|25f7f7e2-1fc6-41d8-a14b-2d2742e98c50|00000000-0000-0000-0000-000000000000|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55|"
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -468,7 +476,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "project1.kicad_pro",
+    "filename": "Final_Project-REAL.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -564,11 +572,23 @@
           "label": "DNP",
           "name": "${DNP}",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "name": "Grouped By Value",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -609,7 +629,7 @@
       "meta": {
         "version": 0
       },
-      "model_mode": 4,
+      "model_mode": 0,
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",

@@ -85,9 +85,11 @@ void loop() {
 // MPU6050 CHECK
 void readOrientation() {
   // RAW ACCELERATION VALUES
-  accelgyro.getAcceleration(&ax, &ay, &az);
+  //accelgyro.getAcceleration(&ax, &ay, &az);
+  ax = accelgyro.getAccelerationX();
 // ORIENTATION CHECK -> ax>0 RIGHTSIDEUP, ax<0 UPSIDEDOWN
   orientationRightSideUp = (az > 0);
+  Serial.print(ax);
 }
 // PRINTING LOOP
 void SerialCheck(float current_f, float current_c) {
